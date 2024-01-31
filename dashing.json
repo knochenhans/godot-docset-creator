@@ -1,0 +1,43 @@
+{
+    "name": "Godot",
+    "package": "godot",
+    "index": "index.html",
+    "selectors": {
+        "title": {
+            "type": "Class",
+            "regexp": "",
+            "replacement": "",
+            "matchpath": "classes/.*\\.html"
+        },
+        "h1": {
+            "type": "Guide",
+            "matchpath": "tutorials/.*\\.html",
+            "regexp": "¶",
+            "replacement": ""
+        },
+        "p.classref-method": {
+            "type": "Method",
+            "matchpath": "classes/.*\\.html"
+        },
+        "p.classref-enumeration": {
+            "type": "Enum",
+            "matchpath": "classes/.*\\.html"
+        },
+        "p.classref-property": {
+            "type": "Property",
+            "matchpath": "classes/.*\\.html"
+        },
+        "p.classref-signal": {
+            "type": "Event",
+            "matchpath": "classes/.*\\.html"
+        }
+    },
+    "ignore": [
+        "about",
+        "community",
+        "contributing"
+    ],
+    "icon32x32": "icon.png",
+    "allowJS": true,
+    "ExternalURL": "https://docs.godotengine.org/en/stable/"
+}
